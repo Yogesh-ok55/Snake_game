@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("image.png"); 
+     background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    font-family: 'New Tegomin', serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+a{
+    color: white; 
+    text-decoration: none; 
+} 
+a:hover{
+    text-decoration: none; 
+    color: white; 
+} 
+  
+.btn-start {
+    font-size: 24px;
+}
+
+
+.snake-icon {
+    font-size: 8vw;
+    color: #28a745;
+    animation: pulse 1s infinite;
+}
+  
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
