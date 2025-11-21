@@ -54,6 +54,7 @@ function gameEngine(){
         inputDir =  {x: 0, y: 0};
         result = undefined;  
         alert("Game Over. Press any key to play again!");
+        scoreBox.innerHTML = "Score: " + score;
         snakeArr = [{x: 13, y: 15}];
         musicSound.play();
         
@@ -192,6 +193,7 @@ window.addEventListener('keydown', e => {
             console.log(e.key);
     }
 });
+
 
 
 
