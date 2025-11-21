@@ -51,7 +51,8 @@ function gameEngine(){
         gameOverSound.play();
         musicSound.pause();
         score = 0;
-        inputDir =  {x: 0, y: 0}; 
+        inputDir =  {x: 0, y: 0};
+        result = undefined;  
         alert("Game Over. Press any key to play again!");
         snakeArr = [{x: 13, y: 15}];
         musicSound.play();
@@ -191,6 +192,7 @@ window.addEventListener('keydown', e => {
             console.log(e.key);
     }
 });
+
 
 
 
