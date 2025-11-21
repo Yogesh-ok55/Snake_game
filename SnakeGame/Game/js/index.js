@@ -4,7 +4,7 @@ const foodSound = new Audio('music/food.mp3');
 const gameOverSound = new Audio('music/gameover.mp3');
 const moveSound = new Audio('music/move.mp3');
 const musicSound = new Audio('music/music.mp3');
-let speed = 9;
+let speed = 25;
 let score = 0;
 let lastPaintTime = 0;
 let snakeArr = [
@@ -129,40 +129,48 @@ window.addEventListener('keydown', e => {
     moveSound.play();
     switch (e.key) {
         case "ArrowUp":
+        case "i":
+        case "I":
             start=0;
-            if (result !== "ArrowDown") {
+            if (result !== "UP-DOWN") {
                 console.log("ArrowUp");
                 inputDir.x = 0;
                 inputDir.y = -1;
             }
-            result = e.key;
+            result = "UP-UP";
             break;
         case "ArrowDown":
+        case "k":
+        case "K":
             start=0;
-            if (result !== "ArrowUp") {
+            if (result !== "UP-UP") {
                 console.log("ArrowDown");
                 inputDir.x = 0;
                 inputDir.y = 1;
             }
-            result = e.key;
+            result = "UP-DOWN";
             break;
         case "ArrowLeft":
+        case "j":
+        case "J":
             start=0;
-            if (result !== "ArrowRight") {
+            if (result !== "RIGHT") {
                 console.log("ArrowLeft");
                 inputDir.x = -1;
                 inputDir.y = 0;
             }
-            result = e.key;
+            result = "LEFT";
             break;
         case "ArrowRight":
+        case "l":
+        case "L":
             start=0;
-            if (result !== "ArrowLeft") {
+            if (result !== "LEFT") {
                 console.log("ArrowRight");
                 inputDir.x = 1;
                 inputDir.y = 0;
             }
-            result = e.key;
+            result = "RIGHT";
             break;
         case " ":
             console.log("Space bar");
@@ -179,6 +187,7 @@ window.addEventListener('keydown', e => {
             console.log(e.key);
     }
 });
+
 
 
 
