@@ -136,8 +136,9 @@ window.addEventListener('keydown', e => {
                 console.log("ArrowUp");
                 inputDir.x = 0;
                 inputDir.y = -1;
+                result = "UP-UP";
             }
-            result = "UP-UP";
+            
             break;
         case "ArrowDown":
         case "k":
@@ -147,8 +148,9 @@ window.addEventListener('keydown', e => {
                 console.log("ArrowDown");
                 inputDir.x = 0;
                 inputDir.y = 1;
+                result = "UP-DOWN";
             }
-            result = "UP-DOWN";
+            
             break;
         case "ArrowLeft":
         case "j":
@@ -158,8 +160,9 @@ window.addEventListener('keydown', e => {
                 console.log("ArrowLeft");
                 inputDir.x = -1;
                 inputDir.y = 0;
+                result = "LEFT";
             }
-            result = "LEFT";
+            
             break;
         case "ArrowRight":
         case "l":
@@ -169,8 +172,9 @@ window.addEventListener('keydown', e => {
                 console.log("ArrowRight");
                 inputDir.x = 1;
                 inputDir.y = 0;
+                result = "RIGHT";
             }
-            result = "RIGHT";
+            
             break;
         case " ":
             console.log("Space bar");
@@ -187,6 +191,7 @@ window.addEventListener('keydown', e => {
             console.log(e.key);
     }
 });
+
 
 
 
